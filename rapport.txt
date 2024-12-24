@@ -1,0 +1,77 @@
+### Rapport d'activité - Apprentissage de la Programmation Orientée Objet (POO) en PHP
+
+**Date :** 24 décembre 2024  
+**Durée :** Journée entière  
+**Objectif :** Apprendre et mettre en pratique les concepts fondamentaux de la Programmation Orientée Objet (POO) en PHP à travers un exercice pratique.
+
+---
+
+#### **1. Introduction à la POO**
+La journée a débuté par une révision des concepts clés de la **Programmation Orientée Objet (POO)**. Voici les points principaux abordés :
+
+- **Classe et Objet** :
+  - Une **classe** définit un modèle (plan) pour créer des objets. Elle regroupe des **propriétés** (attributs) et des **méthodes** (fonctions) qui déterminent le comportement de l'objet.
+  - Un **objet** est une instance de la classe. C'est à partir de cette instance qu'on peut accéder aux propriétés et méthodes définies dans la classe.
+
+- **Encapsulation** :
+  - L'encapsulation consiste à restreindre l'accès direct aux propriétés d'une classe et à utiliser des **modificateurs d'accès** (public, privé, protégé) pour gérer l'accès aux données sensibles.
+  
+- **Héritage** :
+  - L'héritage permet à une classe d'hériter des propriétés et méthodes d'une autre classe. Cela facilite la réutilisation du code et permet de créer des classes spécialisées à partir de classes génériques.
+
+#### **2. Application des Concepts via l'Exercice Pratique**
+
+Après avoir assimilé les bases théoriques de la POO, j'ai mis en pratique mes connaissances à travers un exercice concret : la création d'un système simple représentant des **utilisateurs** d'un système médical, comprenant des **patients** et des **médecins**.
+
+##### **a. Classe Utilisateur**
+
+La classe **`Utilisateur`** a été créée pour représenter un utilisateur générique, avec les propriétés :
+- **Nom**
+- **Prénom**
+- **Type d'utilisateur** (par exemple, "Patient" ou "Médecin")
+
+Des méthodes comme **`afficherNomComplet()`** et **`changerNom()`** ont été ajoutées pour manipuler les informations de l'utilisateur.
+
+##### **b. Classe Patient**
+
+La classe **`Patient`** a hérité de la classe `Utilisateur`. Elle a été enrichie d'une nouvelle propriété :
+- **Rendez-vous** (représente la date d'un rendez-vous médical)
+
+La classe **`Patient`** a également une méthode **`prendreRendezVous()`** pour attribuer une date à un rendez-vous, et **`afficherRendezVous()`** pour afficher cette date.
+
+##### **c. Classe Medecin**
+
+La classe **`Medecin`**, elle aussi héritée de `Utilisateur`, inclut une propriété supplémentaire :
+- **Spécialité** (indiquant la spécialité du médecin, comme "Cardiologue")
+
+Elle comprend également une méthode **`consulterPatient()`**, permettant de simuler la consultation d'un patient.
+
+##### **d. Test de l'application**
+
+Une fois les classes définies, j'ai créé des objets de type **`Medecin`** et **`Patient`**, puis j'ai testé leurs interactions :
+
+1. Création d'un objet **`Medecin`** avec des informations de spécialité.
+2. Création d'un objet **`Patient`**, suivi de l'ajout d'un rendez-vous.
+3. Affichage des informations du médecin et du patient, ainsi que l'exécution de la méthode **`consulterPatient()`** pour simuler une consultation.
+
+#### **3. Résultats et Conclusion**
+
+Le code a été exécuté avec succès, et voici le résultat attendu :
+
+1. Le nom complet du médecin a été affiché.
+2. La consultation du patient a été simulée, et le rendez-vous a été correctement affiché.
+3. La gestion des propriétés et méthodes à travers l'encapsulation et l'héritage a été pleinement fonctionnelle, démontrant l'efficacité de la **POO** pour structurer des applications complexes.
+
+### **Bilan de la journée :**
+Cette journée d'apprentissage a permis de mieux comprendre les avantages de la **programmation orientée objet** : 
+- **Organisation et modularité** du code
+- **Réutilisation du code** grâce à l'héritage
+- **Sécurisation des données** grâce à l'encapsulation
+
+Cet exercice m'a permis de mettre en pratique la création de classes et l'interaction entre objets, tout en utilisant des concepts comme l'héritage et l'encapsulation. Je me sens désormais plus à l'aise avec la POO en PHP et prêt à l'appliquer dans des projets plus complexes.
+
+---
+
+**Next Steps :**
+- Approfondir l'utilisation des **interfaces** et **abstract classes** pour des conceptions encore plus avancées.
+- Travailler sur la gestion des erreurs et l'amélioration des validations des données dans le contexte d'une application plus grande.
