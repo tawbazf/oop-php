@@ -71,17 +71,17 @@ class Medecin extends Utilisateur {
 }
 
 // Création d'un objet Medecin
-$medecin = new Medecin('Doe', 'John', 'Medecin', 'Cardiologue');
+$medecin = new Medecin('alaoui', 'ahmed', 'Medecin', 'Cardiologue');
 
 // Création d'un objet Patient
-$patient = new Patient('Dupont', 'Marie', 'Patient');
+$patient = new Patient('zehaf', 'tawba', 'Patient');
 
 // Le patient prend un rendez-vous
 $patient->prendreRendezVous('2024-12-25');
 
 // Affichage du nom complet du médecin
-echo "Médecin : " . $medecin->afficherNomComplet() . "\n";  // Affiche "John Doe"
+echo "Médecin : " . $medecin->afficherNomComplet() . "\n";  
 
 // Le médecin consulte le patient
-$medecin->consulterPatient($patient);  // Affiche les informations de consultation et du rendez-vous
+$medecin->consulterPatient($patient);  
 ?>
